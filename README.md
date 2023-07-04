@@ -1,4 +1,4 @@
-# GoogleScholrDatagathering
+# GoogleScholr Datagathering
 This simple script has been introduced to query research publications from Google Scholar, specifically designed to assist research students in obtaining relevant scholarly documents. This streamlined system optimizes the search process, empowering students to efficiently retrieve high-quality research publications.
 
 Open the Config file 
