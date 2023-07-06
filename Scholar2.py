@@ -1,7 +1,7 @@
 from Config import Config
 
 # List the required modules
-required_modules = ['pandas', 'scholarly', 'openpyxl']
+required_modules = ['pandas', 'scholarly', 'openpyxl', 'matplotlib']
 
 # Try importing the modules and install the missing ones
 for module in required_modules:
@@ -14,6 +14,7 @@ for module in required_modules:
 # Now import the necessary modules
 import pandas as pd
 from scholarly import scholarly
+import matplotlib.pyplot as plt
 
 search_query = scholarly.search_pubs(Config.SEARCHKEY)
 
@@ -41,3 +42,15 @@ for i in range(Config.NUMRECORDS):
 
 # Save the DataFrame to an Excel file
 data.to_excel('papers.xlsx', index=False)
+
+# Generate a year wise summery of the found data
+# Categorize the data based on the year and get the counts
+year_counts = data['Year'].value_counts()
+
+# Plot the bar graph
+plt.figure(num='Number of papers based on the published year')  # Set the figure name
+plt.bar(year_counts.index, year_counts.values)
+# Add labels and title
+plt.xlabel('Year')
+plt.ylabel('Count')
+plt.show()
