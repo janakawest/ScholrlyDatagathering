@@ -9,7 +9,7 @@ For those who do not have Python (assuming that some non-programmers will use th
 3. Disable the path length limit.
 If you are technically not souding, make sure you use the default installation mode. Otherwise, why are you reading this nonsense? :)
 After installing Python, open the command prompt and check if it's working by typing 'python'. (To exit, type 'exit()'.)
-
+----------------------------
 -- Download the repository to your PC.
 1. Go to the Scholar2 folder.
 2. Open a terminal from the Scholar2 folder.
