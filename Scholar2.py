@@ -1,7 +1,7 @@
 from Config import Config
 
 # List the required modules
-required_modules = ['pandas', 'scholarly', 'openpyxl', 'matplotlib']
+required_modules = ['pandas', 'scholarly', 'openpyxl', 'matplotlib', 'wordcloud']
 
 # Try importing the modules and install the missing ones
 for module in required_modules:
@@ -15,6 +15,7 @@ for module in required_modules:
 import pandas as pd
 from scholarly import scholarly
 import matplotlib.pyplot as plt
+from wordcloud import WordCloud
 
 search_query = scholarly.search_pubs(Config.SEARCHKEY)
 
@@ -41,7 +42,7 @@ for i in range(Config.NUMRECORDS):
     data = pd.concat([data, new_data], ignore_index=True)
 
 # Save the DataFrame to an Excel file
-data.to_excel('papers.xlsx', index=False)
+#data.to_excel('papers.xlsx', index=False)
 
 # Generate a year wise summery of the found data
 # Categorize the data based on the year and get the counts
@@ -53,4 +54,14 @@ plt.bar(year_counts.index, year_counts.values)
 # Add labels and title
 plt.xlabel('Year')
 plt.ylabel('Count')
+
+# Get all titles together to add to a word cloud
+titles = ' '.join (data['Title'].tolist ())
+
+# Create the WordCloud object
+wordcloud = WordCloud(width=1600, height=800, max_font_size=175, background_color='white').generate(titles)
+# Plot the word cloud
+plt.figure(num='Highlighted areas in the titles')  # Set the figure name
+plt.imshow(wordcloud, interpolation='bilinear')
+plt.axis('off')
 plt.show()
