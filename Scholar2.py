@@ -13,9 +13,15 @@ for module in required_modules:
 
 # Now import the necessary modules
 import pandas as pd
-from scholarly import scholarly
+from scholarly import ProxyGenerator, scholarly
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
+
+# As a fix for Proxy Problem.
+pg = ProxyGenerator()
+pg.FreeProxies()
+scholarly.use_proxy(pg)
+scholarly.search_author_id('tNs_Y7wAAAAJ')
 
 search_query = scholarly.search_pubs(Config.SEARCHKEY)
 
