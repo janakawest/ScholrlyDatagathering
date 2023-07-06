@@ -7,8 +7,11 @@ For those who do not have Python (assuming that some non-programmers will use th
 1. Make sure you run the installer with Admin Privileges.
 2. Tick the "Add python.exe to PATH" option.
 3. Disable the path length limit.
-If you are technically not souding, make sure you use the default installation mode. Otherwise, why are you reading this nonsense? :)
-After installing Python, open the command prompt and check if it's working by typing 'python'. (To exit, type 'exit()'.)
+
+**
+NOTE: If you are technically not souding, make sure you use the default installation mode. Otherwise, why are you reading this nonsense? :)
+After installing Python, open the command prompt and check if it's working by typing 'python'. (To exit, type 'exit()'.)**
+**
 ----------------------------
 -- Download the repository to your PC.
 1. Go to the Scholar2 folder.
