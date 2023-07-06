@@ -15,7 +15,7 @@ Those who do not have Python (Assuming that some none Program BG people will use
 1. Go to the Scholar2 folder
 2. Open a terminal from the Scholar2 folder
   
-Open the Config file 
+- Open the Config file 
 1. Mention the keywords you wanted to search in Google Scholar.
 2. Mention the number of papers you wanted to get from Google Scholar.
 3. Then run the Scholar2.py. 
