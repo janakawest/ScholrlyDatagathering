@@ -21,7 +21,8 @@ from wordcloud import WordCloud
 pg = ProxyGenerator()
 pg.FreeProxies()
 scholarly.use_proxy(pg)
-scholarly.search_author_id('tNs_Y7wAAAAJ')
+
+#scholarly.search_author_id('<Your Google Scholar ID>')
 
 search_query = scholarly.search_pubs(Config.SEARCHKEY)
 
