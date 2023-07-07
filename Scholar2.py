@@ -17,11 +17,12 @@ from scholarly import ProxyGenerator, scholarly
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 
-# As a fix for Proxy Problem.
-pg = ProxyGenerator()
-pg.FreeProxies()
-scholarly.use_proxy(pg)
 
+# As a fix for MaxTriesExceededException: Cannot Fetch from Google Scholar
+# But this is very temporal, as many times it doesn't work. 
+pg = ProxyGenerator()
+success = pg.FreeProxies()
+scholarly.use_proxy(pg)
 #scholarly.search_author_id('<Your Google Scholar ID>')
 
 search_query = scholarly.search_pubs(Config.SEARCHKEY)
