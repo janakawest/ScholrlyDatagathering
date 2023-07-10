@@ -22,7 +22,7 @@ After installing Python, open the command prompt and check if it's working by ty
 1. Type 'python Scholar2.py'.
 2. Execute the Scholar2.py script.
 
-NOTE: Each time you run the script, the Excel file will be overwritten. Either back it up or change the name in Scholar2.py. If you do not have administrative privileges on your PC, it's better to contact the network administrator to enable you to install Python and the necessary libraries.
+NOTE: If you do not have administrative privileges on your PC, it's better to contact the network administrator to enable you to install Python and the necessary libraries.
 
 
 Hats off to the API developers *Cholewiak, Steven A. and Ipeirotis, Panos and Silva, Victor and Kannawadi, Arun*
