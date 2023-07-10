@@ -48,9 +48,9 @@ for i in range(Config.NUMRECORDS):
 
     # Concatenate the new DataFrame with the existing DataFrame
     data = pd.concat([data, new_data], ignore_index=True)
-
 # Save the DataFrame to an Excel file
-data.to_excel('papers.xlsx', index=False)
+name = Config.SEARCHKEY + '.xlsx'
+data.to_excel(name, index=False)
 
 # Generate a year wise summery of the found data
 # Categorize the data based on the year and get the counts
