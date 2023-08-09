@@ -1,4 +1,4 @@
-# GoogleScholar Data Gathering
+# For Google Scholar Data Gathering
 This simple script has been introduced to query research publications from Google Scholar, specifically designed to assist research students in obtaining relevant scholarly documents. This streamlined system optimizes the search process, empowering students to efficiently retrieve high-quality research publications.
 
 For those who do not have Python (assuming that some non-programmers will use this), follow the steps below to install Python first. However, note that this guide is drafted for Windows OS.
