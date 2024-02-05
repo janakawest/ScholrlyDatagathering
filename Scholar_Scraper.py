@@ -1,3 +1,13 @@
+"""
+/*******************************************************
+ * Copyright (c) 2024 
+ 
+ * Authors:
+ *   - Janaka Wijekoon
+ *   - Rashini Liyanarachchi
+ *******************************************************/
+
+"""
 import requests
 import pandas as pd
 from bs4 import BeautifulSoup

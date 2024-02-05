@@ -1,3 +1,13 @@
+"""
+/*******************************************************
+ * Copyright (c) 2024 
+ 
+ * Authors:
+ *   - Janaka Wijekoon
+ *   - Rashini Liyanarachchi
+ *******************************************************/
+
+"""
 import subprocess
 
 def install_module(module_name):

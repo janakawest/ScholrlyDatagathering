@@ -1,3 +1,13 @@
+"""
+/*******************************************************
+ * Copyright (c) 2024 
+ 
+ * Authors:
+ *   - Janaka Wijekoon
+ *   - Rashini Liyanarachchi
+ *******************************************************/
+
+"""
 import subprocess
 class Config:
   SEARCHKEY = '(Breast Cancer Treatment) AND (Radiology OR Radiotherapy) AND (Artificial Intelligence OR AI OR ML)'
