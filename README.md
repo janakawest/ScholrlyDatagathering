@@ -25,6 +25,7 @@ After installing Python, open the command prompt and check if it's working by ty
 
 NOTE: If you do not have administrative privileges on your PC, it's better to contact the network administrator to enable you to install Python and the necessary libraries.
 Hats off to the API developers *Cholewiak, Steven A. and Ipeirotis, Panos and Silva, Victor and Kannawadi, Arun*
+
 Scholarly URL: https://pypi.org/project/scholarly/
 
 ### Retrieving papers from Pubmed
@@ -37,4 +38,5 @@ Scholarly URL: https://pypi.org/project/scholarly/
 2. Execute the Pubme.py script.
 
 Hats off to the API developers *Jannis Born, Matteo Manica*
+
 Paperscraper URL: https://pypi.org/project/paperscraper/
