@@ -1,7 +1,7 @@
 import subprocess
 class Config:
-  SEARCHKEY = "Blister Blight and  Tea leafe and  Machine Learning"
-  NUMRECORDS = 5
+  SEARCHKEY = '(Breast Cancer Treatment) AND (Radiology OR Radiotherapy) AND (Artificial Intelligence OR AI OR ML)'
+  NUMRECORDS = 100
   
   # Install the modules which are missing
   def install_module(module_name):
