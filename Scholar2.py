@@ -1,7 +1,7 @@
 from Config import Config
 
 # List the required modules
-required_modules = ['pandas', 'scholarly', 'openpyxl', 'matplotlib', 'wordcloud']
+required_modules = ['pandas', 'scholarly', 'matplotlib', 'wordcloud']
 
 # Try importing the modules and install the missing ones
 for module in required_modules:
