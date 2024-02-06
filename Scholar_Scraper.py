@@ -67,7 +67,7 @@ def GetGoogleScholarData(query,num_pages):
     plt.figure(num='Highlighted areas in the titles')  
     plt.imshow(wordcloud, interpolation='bilinear')
     plt.axis('off')
-    plt.show()
+    #plt.show()
 
     ## WORDCLOUD FOR PUBLISHERS
     publishers = ' '.join (df['Publisher'].tolist ())
