@@ -1,10 +1,12 @@
 """
 /*******************************************************
- * Copyright (c) 2024 
+ * General Public License 2024 
  
  * Authors:
  *   - Janaka Wijekoon
  *   - Rashini Liyanarachchi
+
+ * Feel free to make any modifications to the code. If you make any changes, kindly add your name to the authors list.
  *******************************************************/
 
 """
@@ -34,15 +36,15 @@ from wordcloud import WordCloud
 
 # query = ['AI','Breast Cancer','Artificial intelligence','hormonal therapy']
 query = ['(Breast Cancer Treatment) AND (Radiology OR Radiotherapy) AND (Artificial Intelligence OR AI OR ML)']
+
 get_and_dump_pubmed_papers(query, output_filepath='sheet_test.jsonl')
 
 
 # Read the data from the JSONL file
 data = pd.read_json('sheet_test.jsonl', lines=True)
-
 # Save the data to an XLS file
 data.to_excel('sheet_test.xlsx', index=False)
-print(data)
+
 
 data['year'] = pd.to_datetime(data['date']).dt.year
 
