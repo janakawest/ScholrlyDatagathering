@@ -1,3 +1,16 @@
+"""
+/*******************************************************
+ * General Public License 2024 
+ 
+ * Authors:
+ *   - Janaka Wijekoon
+ *   - Rashini Liyanarachchi
+
+ * Feel free to make any modifications to the code. If you make any changes, kindly add your name to the authors list.
+ *******************************************************/
+
+"""
+
 import subprocess
 
 def install_module(module_name):
